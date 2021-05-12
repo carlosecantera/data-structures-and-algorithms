@@ -73,11 +73,6 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  word.forEach((item) => {
-    let i = item.toUpperCase();
-    newLocalArray.push(i);
-    return word;
-
   // Solution code here...
 });
 
