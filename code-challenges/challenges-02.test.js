@@ -15,7 +15,7 @@ const raisedToTheThird = (arr) => {
     localArray.push(Math.pow(item, 3));
   });
   return localArray; 
-  // Solution code here...
+  // Solution code here....
 };
 
 
