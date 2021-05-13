@@ -84,7 +84,7 @@ const greeting = (word) => {
 const speaker = (words, callback) => {
   // Solution code here...
 };
-
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -103,6 +103,7 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   console.log(value);
+  const localArray =
   // Solution code here...
 };
 
