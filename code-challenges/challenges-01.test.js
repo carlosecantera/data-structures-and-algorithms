@@ -154,7 +154,7 @@ const createList = (availableItems) => {
   }
 })
   return localArray;
-  // Solution code here...
+  // Solution code here....
 };
 
 /* ------------------------------------------------------------------------------------------------
