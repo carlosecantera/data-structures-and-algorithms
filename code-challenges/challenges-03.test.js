@@ -28,6 +28,11 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
+  console.log(arr);
+  const localArray =[];
+  for (let i = 0; i < arr.length; i++) {
+    
+  }
   // Solution code here...
 };
 
