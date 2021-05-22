@@ -11,7 +11,7 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 const raisedToTheThird = (arr) => {
   console.log(arr);
   const localArray = [];
-  arr.map(item => {
+  arr.forEach(item => {
     localArray.push(Math.pow(item, 3));
   });
   return localArray; 
