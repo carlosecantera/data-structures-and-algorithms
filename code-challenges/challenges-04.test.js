@@ -137,7 +137,7 @@ const sortByPrice = (arr) => {
   let newArray = arr.sort ((cost1, cost2) => {
     if (cost1 > cost2) {
       return 1;
-    } else if (cost1 < cost2) {
+    } else if (cost1.price < cost2.price) {
       return -1;
     }
   });
