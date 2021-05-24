@@ -67,9 +67,9 @@ CHALLENGE 4
 
 Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
 
-Then, write a function named `speaker` that takes in an array of strings and a callback function. 
+Then, write a function named `speaker` that takes in an array of strings and a callback function.
 
-Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
+Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
@@ -85,10 +85,10 @@ const localArray = [];
 const speaker = (words, callback) => {
   words.forEach((word) => {
     localArray.push(callback(word));
-    
+
   });
   return localArray;
-  
+
   // Solution code here...
 };
 
@@ -118,13 +118,13 @@ const addNumbers = (num, arr, times, callback) => {
   // console.log(num);
   // console.log(arr);
   // console.log(times);
-  const localArray = [];
+
   for (let i = 0; i < times; i++) {
-    
+
     callback(arr, num);
   }
   return arr;
- 
+
 
   // Solution code here...
 };
@@ -151,10 +151,10 @@ const createList = (availableItems) => {
   console.log(availableItems);
   const localArray = [];
   availableItems.forEach(element => {
-  if (element.available) {
-    localArray.push(element.name);
-  }
-})
+    if (element.available) {
+      localArray.push(element.name);
+    }
+  });
   return localArray;
   // Solution code here....
 };
@@ -175,6 +175,7 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
