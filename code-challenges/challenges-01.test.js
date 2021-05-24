@@ -9,14 +9,14 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  console.log ('this is arr:', arr );
+  // console.log ('this is arr:', arr );
   const localArray = []; //variable
   arr.forEach((item) => {
     let i = item+1;
     localArray.push(i);
-    console.log('this is array item',item);
+    // console.log('this is array item',item);
   });
-  console.log('this is local array', localArray);
+  // console.log('this is local array', localArray);
   return localArray;
   // array.forEach(console.log[i]);
   // Solution code here...
@@ -31,12 +31,12 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  console.log ('this is arr', arr);
+  // console.log ('this is arr', arr);
   const newArray =[];
   arr.forEach((item) => {
     let i = item+'!';
     newArray.push(i);
-    console.log('this item is', item);
+    // console.log('this item is', item);
   });
   return newArray;
 
@@ -52,7 +52,7 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  console.log ('this is arr', arr);
+  // console.log ('this is arr', arr);
   const newLocalArray =[];
   arr.forEach((item) => {
     let i = item.toUpperCase();
@@ -67,18 +67,31 @@ CHALLENGE 4
 
 Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
 
-Then, write a function named `speaker` that takes in an array of strings and a callback function. 
+Then, write a function named `speaker` that takes in an array of strings and a callback function.
 
-Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
+Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
-});
 
-const speaker = (words, callback) => {
+  const wordUppercase = word.toUpperCase();
+  const wordExclam = wordUppercase + '!';
+  return wordExclam;
+
+
   // Solution code here...
 };
+const localArray = [];
+const speaker = (words, callback) => {
+  words.forEach((word) => {
+    localArray.push(callback(word));
+
+  });
+  return localArray;
+
+  // Solution code here...
+};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -97,11 +110,22 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  console.log(value);
+  arr.push(value);
   // Solution code here...
 };
 
 const addNumbers = (num, arr, times, callback) => {
+  // console.log(num);
+  // console.log(arr);
+  // console.log(times);
+
+  for (let i = 0; i < times; i++) {
+
+    callback(arr, num);
+  }
+  return arr;
+
+
   // Solution code here...
 };
 
@@ -124,7 +148,15 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  console.log(availableItems);
+  const localArray = [];
+  availableItems.forEach(element => {
+    if (element.available) {
+      localArray.push(element.name);
+    }
+  });
+  return localArray;
+  // Solution code here....
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -143,6 +175,7 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
